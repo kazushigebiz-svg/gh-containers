@@ -11,7 +11,7 @@ jobs:
   test:
     environment: testing
     runs-on: ubuntu-latest
-    containter:
+    container:
       image: node:18
     env:
       MONGODB_CONNECTION_PROTOCOL: mongodb
@@ -19,7 +19,7 @@ jobs:
       MONGODB_USERNAME: root
       MONGODB_PASSWORD: example
       PORT: 8080
-    servcies:
+    services:
       mongodb:
         image: mongo
         env: 
